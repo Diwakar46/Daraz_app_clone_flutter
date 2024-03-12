@@ -20,3 +20,20 @@ This allows you to automatically update the UI when the state changes without ma
 --> Imagine you're building a house (your app), and the 
 API data is like furniture you're bringing in. The model class is the instruction manual that
  tells you how to arrange and understand that furniture so your house looks neat and makes sense.
+
+
+ --> push this app to gitHub
+ .Create a new reposotries in gitHub
+ come to terminal 
+ -> git init
+ -> git remote add origin <Shh url> or <https>
+ -> git add .
+ -> git commit -m " "
+ -> git push - u origin master/main/or whatever your branch
+
+after making changes in code
+-> git add .
+-> git commit -m "Description of changes made"
+-> git push origin <branch-name>
+
+

@@ -1,0 +1,22 @@
+flutter pub run build_runner build --delete-conflicting-outputs 
+
+-->  is used to run code generation tasks in your Flutter project, 
+with the added precaution of deleting any conflicting outputs 
+before generating new ones. This ensures that 
+the generated code is up-to-date and consistent with your project's current state.
+
+
+--> A binding essentially links your controller with the rest of your dependencies in the application
+
+-->RxString is an observable string provided by GetX. 
+Observables are special variables that can notify the UI whenever their values change. 
+This allows you to automatically update the UI when the state changes without manually calling setState().
+
+--> obx used in a changing widget and obs used for changing variables
+
+-->  replaced StatefulWidget with GetView<HomeController>
+    which is a simplified way of managing state using GetX.
+
+--> Imagine you're building a house (your app), and the 
+API data is like furniture you're bringing in. The model class is the instruction manual that
+ tells you how to arrange and understand that furniture so your house looks neat and makes sense.

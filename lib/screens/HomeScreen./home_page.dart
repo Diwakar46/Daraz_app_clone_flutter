@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 // import 'package:get/get_state_manager/src/simple/get_view.dart';
-import 'package:rest_api_flutter/api/api_methods.dart';
-import 'package:rest_api_flutter/constants/colors.dart';
-import 'package:rest_api_flutter/screens/Cart/cart.dart';
-import 'package:rest_api_flutter/screens/HomeScreen./HomeScreenWidgets/location_screen.dart';
-import 'package:rest_api_flutter/screens/Message/message.dart';
-import 'package:rest_api_flutter/screens/Profile/profile.dart';
-import 'package:rest_api_flutter/screens/HomeScreen./home_controller.dart';
+import 'package:Daraz/api/api_methods.dart';
+import 'package:Daraz/constants/colors.dart';
+import 'package:Daraz/screens/Cart/cart.dart';
+import 'package:Daraz/screens/HomeScreen./HomeScreenWidgets/location_screen.dart';
+import 'package:Daraz/screens/Message/message.dart';
+import 'package:Daraz/screens/Profile/profile.dart';
+import 'package:Daraz/screens/HomeScreen./home_controller.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({super.key});
   final List<Widget> screens = [
-     HomeScreen(),
+     const HomeScreen(),
     const Message(),
     const CartPage(),
     const Profile()

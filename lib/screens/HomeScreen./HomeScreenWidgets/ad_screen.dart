@@ -1,9 +1,8 @@
 import 'package:chewie/chewie.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:rest_api_flutter/constants/colors.dart';
-import 'package:rest_api_flutter/screens/HomeScreen./home_controller.dart';
-import 'package:video_player/video_player.dart';
+import 'package:Daraz/constants/colors.dart';
+import 'package:Daraz/screens/HomeScreen./home_controller.dart';
 
 class AdScreen extends StatelessWidget {
   AdScreen({super.key});

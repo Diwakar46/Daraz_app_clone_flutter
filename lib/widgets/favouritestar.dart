@@ -7,10 +7,6 @@ class FavouriteStar extends StatefulWidget {
   State<FavouriteStar> createState() => _FavouriteStar();
 }
 
-
- 
-
-
 class _FavouriteStar extends State<FavouriteStar> {
   bool isFavorited = false;
   int favoriteCount = 0;
@@ -19,8 +15,10 @@ class _FavouriteStar extends State<FavouriteStar> {
   Widget build(BuildContext context) {
     return IconButton(
       onPressed: FavStar,
-      icon: (isFavorited ? const Icon(Icons.star) : const Icon(Icons.star_border)),
-      color: Colors.purple,
+      icon: (isFavorited
+          ? const Icon(Icons.star)
+          : const Icon(Icons.star_border)),
+      color: Colors.red,
     );
   }
 
@@ -35,5 +33,4 @@ class _FavouriteStar extends State<FavouriteStar> {
       }
     });
   }
-
 }

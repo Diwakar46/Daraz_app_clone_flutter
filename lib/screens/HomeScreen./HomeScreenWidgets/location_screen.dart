@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
-import 'package:rest_api_flutter/constants/colors.dart';
-import 'package:rest_api_flutter/screens/HomeScreen./HomeScreenWidgets/ad_screen.dart';
-import 'package:rest_api_flutter/screens/HomeScreen./HomeScreenWidgets/categories.dart';
-import 'package:rest_api_flutter/screens/HomeScreen./HomeScreenWidgets/ad_screen_II.dart';
-import 'package:rest_api_flutter/screens/HomeScreen./HomeScreenWidgets/sale_screen_widget.dart';
+import 'package:Daraz/constants/colors.dart';
+import 'package:Daraz/screens/HomeScreen./HomeScreenWidgets/ad_screen.dart';
+import 'package:Daraz/screens/HomeScreen./HomeScreenWidgets/categories.dart';
+import 'package:Daraz/screens/HomeScreen./HomeScreenWidgets/ad_screen_II.dart';
+import 'package:Daraz/screens/HomeScreen./HomeScreenWidgets/sale_screen_widget.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -120,7 +120,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     },
                     shadowColor: const MaterialStatePropertyAll(Colors.white),
                     elevation: const MaterialStatePropertyAll(3),
-                    trailing: <Widget>[Icon(Icons.flag_circle_outlined)],
+                    trailing: const <Widget>[Icon(Icons.flag_circle_outlined)],
                     leading: Row(
                       children: [
                         IconButton(
@@ -159,7 +159,7 @@ class _HomeScreenState extends State<HomeScreen> {
             height: 15,
             width: double.infinity,
           ),
-           Padding(
+            Padding(
             padding: EdgeInsets.all(8.0),
             child: SaleScreen(),
           ),
@@ -167,7 +167,7 @@ class _HomeScreenState extends State<HomeScreen> {
             height: 15,
             width: double.infinity,
           ),
-           Padding(
+            Padding(
             padding: EdgeInsets.all(8.0),
             child: Categories(),
           ),

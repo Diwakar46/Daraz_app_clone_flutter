@@ -37,3 +37,10 @@ after making changes in code
 -> git push origin <branch-name>
 
 
+tolist() method
+--> final planets = <int, String>{1: 'Mercury', 2: 'Venus', 3: 'Mars'};
+ final keysList = planets.keys.toList(growable: false); // [1, 2, 3]
+ final valuesList =
+    planets.values.toList(growable: false); // [Mercury, Venus, Mars]
+
+

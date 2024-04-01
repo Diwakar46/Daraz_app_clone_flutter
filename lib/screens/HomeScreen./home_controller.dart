@@ -1,8 +1,7 @@
 import 'package:chewie/chewie.dart';
 import 'package:get/get.dart';
-import 'package:get/get_rx/get_rx.dart';
-import 'package:rest_api_flutter/api/api_methods.dart';
-import 'package:rest_api_flutter/screens/HomeScreen./HomeScreenWidgets/location_screen.dart';
+import 'package:Daraz/api/api_methods.dart';
+import 'package:Daraz/screens/HomeScreen./HomeScreenWidgets/location_screen.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:video_player/video_player.dart';
 
@@ -10,9 +9,10 @@ class HomeController extends GetxController {
   var selectedIndex = 0.obs;
   late Future<List<dynamic>> saleData;
   late Future<Map<String, dynamic>> productData;
+   late Future<Map<String, dynamic>> myImage;
   late VideoPlayerController videoPlayerController;
   late ChewieController chewieController;
-  final HomeScreen locationScreen = HomeScreen();
+  final HomeScreen locationScreen = const HomeScreen();
   RxString livelocationmessage = 'Default live Val'.obs;   
    RxString  long = ''.obs;
     RxString lat = ''.obs;
@@ -37,6 +37,7 @@ class HomeController extends GetxController {
     super.onInit();
     saleData = ApiMethods.getItems();
     productData = ApiMethods.getItems2();
+    myImage = ApiMethods.getItems3();
 
     videoPlayerController = VideoPlayerController.networkUrl(
         Uri.parse('https://www.youtube.com/watch?v=apedYzyc_MI'));

@@ -5,7 +5,7 @@
  
     <application
      
-        android:label="rest_api_flutter"
+        android:label="Daraz"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
